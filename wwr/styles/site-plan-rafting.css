@@ -1,0 +1,63 @@
+@import url(https://fonts.google.com/specimen/Patrick+Hand?preview.text=I%27m%20blue&classification=Handwriting&stroke=Sans+Serif);
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color:#BCE784;
+    --secondary-color: #5DD39E;
+    --accent1-color: #348AA7;
+    --accent2-color: #F26018;
+
+    --heading-font: 'patrick-hand-regular', serif;
+    --paragraph-font: 'patrick-hand-regular', serif;
+
+    --nav-background-color: #348AA7;
+    --nav-link-color: #F26018;
+    --nav-hover-link-color: #BCE784;
+    --nav-hover-background-color: #5DD39E;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding:20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(#348AA7);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(#348AA7);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-hover-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-background-color);
+    background-color: var(#BCE784);
+}
