@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Patrick+Hand?preview.text=I%27m%20blue&classification=Handwriting&stroke=Sans+Serif);
+@import url(https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap);
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -11,8 +11,8 @@ body {
     --accent1-color: #348AA7;
     --accent2-color: #F26018;
 
-    --heading-font: 'patrick-hand-regular', serif;
-    --paragraph-font: 'patrick-hand-regular', serif;
+    --heading-font: 'Patrick Hand', sans-serif;
+    --paragraph-font: 'Patrick Hand', sans-serif;
 
     --nav-background-color: #348AA7;
     --nav-link-color: #F26018;

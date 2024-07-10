@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap);
+/*Author: Daniel Costa*/
+/*Com o root, estou definindo como padrão as cores, a fonte que é 'Patrick Hand' e deixando os links sem sublinhamento*/ 
+
+:root {
+    --primary-color: rgb(139,69,19);
+    --secondary-color: rgb(210,105,30);
+    --third-color: rgb(72,209,204);
+
+    --heading-font: 'Patrick Hand', sans-serif;
+    --paragraph-font: 'Patrick Hand', sans-serif;
+
+    --link-decoration: none;
+}
+
+a {
+    font-family: var(--heading-font);
+    text-decoration: var(--link-decoration);
+    text-align: center;
+    color: black;
+}
+
+h1, h2 {
+    color: var(--third-color);
+    box-sizing: border-box;
+}
+
+/*Class Selectors*/
+.hero img {
+    display: block;
+    width: 50%;
+    height:auto;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
