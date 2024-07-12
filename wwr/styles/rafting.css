@@ -13,7 +13,7 @@
     --link-decoration: none;
 }
 
-a {
+a, p {
     font-family: var(--heading-font);
     text-decoration: var(--link-decoration);
     text-align: center;
@@ -23,13 +23,65 @@ a {
 h1, h2 {
     color: var(--third-color);
     box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--heading-font);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--third-color);
+}
+
+main {
+    align-items: center;
+
+}
+
+header img {
+    order: 1; 
+    margin-left: 30%;
+}
+
+nav {
+    display: flex;
+    justify-content:center;
+    order: 2;
+    margin-right: 30%;
+}
+
+header nav a {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    border: 5px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    margin-left: 50%;
+    margin-bottom: 50%;
+    padding: 1rem;
 }
 
 /*Class Selectors*/
 .hero img {
     display: block;
-    width: 50%;
+    width: 30%;
+    margin: auto;
     height:auto;
+    align-items: center;
 }
 
 .box {
@@ -37,4 +89,46 @@ h1, h2 {
     border: 1px solid var(--primary-color);
     padding: 1rem;
     background-color: var(--secondary-color);
+    text-align: center;
+    width: auto;
+}
+
+.box img {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.sociallinks {
+    margin-top: 1rem;
+}
+
+.sociallinks a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Distribui as imagens igualmente */
+}
+
+.image-wrapper {
+    text-align: center; /* Centraliza o conteúdo dentro do wrapper */
+}
+
+.image-wrapper img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    width: 50px;
+    height: auto;
+}
+
+.image-caption {
+    margin-top: 5px; /* Espaçamento entre a imagem e a legenda */
+    font-style: italic; /* Estilo da legenda */
 }
