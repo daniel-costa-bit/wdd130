@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="styles/quiz.css">
+        <meta charset="uft-8>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Short quiz with basic questions about HTML and CSS">
+        <title>Basic CSS & HTML Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>WDD 130 | Basic HTML & CSS Quiz</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Questions</legend>
+                    <label for="Q1">1. What does the acronym HTML stands for?</label>
+                    <input type="text" id="Q1" name="Q1">
+                    <label for="Q2">2. Explain in a simple way what is a CSS Rule</label>
+                    <textarea id="Q2" name="Q2" rows="3"></textarea>
+                    <label for="Q3">3. Which of the signs below we use to start the declarations in HTML?</label>
+                    <select id="Q3" name="Q3">
+                        <option value="" selected disabled>Choose one of the options</option>
+                        <option value="*">*</option>
+                        <option value="-">-</option>
+                        <option value="<"><</option>
+                        <option value="'">'</option>
+                    </select>
+                    <label for="Q4">4. If I want the bottom margin to be between 3 and 5 pixels, what is the highest number I can insert here? margin-bottom: ?px;</label>
+                    <input type="number" id="Q4" name="Q4">
+                </fieldset>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <p>&#169;2024 | Quiz Activity | Daniel Costa</p>
+    </footer>
+</html>
