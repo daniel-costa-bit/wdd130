@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap);
+/*Author: Daniel Costa*/
+/*Com o root, estou definindo como padrão as cores, a fonte que é 'Patrick Hand' e deixando os links sem sublinhamento*/ 
+
+:root {
+    --primary-color: rgb(139,69,19);
+    --secondary-color: rgb(210,105,30);
+    --third-color: rgb(72,209,204);
+
+    --heading-font: 'Patrick Hand', sans-serif;
+    --paragraph-font: 'Patrick Hand', sans-serif;
+
+    --link-decoration: none;
+}
+
+a, p {
+    font-family: var(--heading-font);
+    text-decoration: var(--link-decoration);
+    text-align: center;
+    color: black;
+}
+
+h1, h2 {
+    color: var(--third-color);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--heading-font);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--third-color);
+}
+
+main {
+    align-items: center;
+
+}
+
+header img {
+    order: 1; 
+    margin-left: 30%;
+}
+
+nav {
+    display: flex;
+    justify-content:center;
+    order: 2;
+    margin-right: 30%;
+}
+
+header nav a {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    border: 5px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    margin-left: 50%;
+    margin-bottom: 50%;
+    padding: 1rem;
+}
+
+/*Class Selectors*/
+.box {
+    margin: 1rem;
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+    width: auto;
+}
+
+.box img {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.sociallinks {
+    margin-top: 1rem;
+}
+
+.sociallinks a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Distribui as imagens igualmente */
+}
+
+.image-wrapper {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+}
+
+.image-wrapper img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-caption {
+    margin-top: 5px; /* Espaçamento entre a imagem e a legenda */
+    font-style: italic; /* Estilo da legenda */
+    font-size: 12px;
+    color: var(--third-color);
+    font-family: var(--heading-font);
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
